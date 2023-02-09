@@ -3,9 +3,7 @@ export default {};
 </script>
 <template>
   <header aria-label="Site Header" class="bg-white">
-    <div
-      class="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8"
-    >
+    <div class="flex h-16 items-center gap-8 px-4 sm:px-6 lg:px-8">
       <a class="block text-teal-600" href="/">
         <img
           src="../assets/logo.png"
@@ -20,7 +18,7 @@ export default {};
           <ul class="flex items-center gap-6 text-sm">
             <li>
               <a
-                class="text-gray-500 transition hover:text-gray-500/75"
+                class="text-gray-500 transition font-dmsans hover:text-gray-500/75"
                 href="/"
               >
                 Trade
@@ -28,7 +26,7 @@ export default {};
             </li>
             <li>
               <a
-                class="text-gray-500 transition hover:text-gray-500/75"
+                class="text-gray-500 transition font-dmsans hover:text-gray-500/75"
                 href="/"
               >
                 Liquidity
@@ -36,7 +34,7 @@ export default {};
             </li>
             <li>
               <a
-                class="text-gray-500 transition hover:text-gray-500/75"
+                class="text-gray-500 transition font-dmsans hover:text-gray-500/75"
                 href="/"
               >
                 Launchpad
@@ -44,7 +42,7 @@ export default {};
             </li>
             <li>
               <a
-                class="text-gray-500 transition hover:text-gray-500/75"
+                class="text-gray-500 transition font-dmsans hover:text-gray-500/75"
                 href="/"
               >
                 Earn
@@ -52,7 +50,7 @@ export default {};
             </li>
             <li>
               <a
-                class="text-gray-500 transition hover:text-gray-500/75"
+                class="text-gray-500 transition font-dmsans hover:text-gray-500/75"
                 href="/"
               >
                 Info
@@ -64,7 +62,7 @@ export default {};
         <div class="flex items-center gap-4">
           <div class="sm:flex sm:gap-4">
             <a
-              class="block rounded-3xl bg-blue-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-blue-700"
+              class="block rounded-3xl font-dmsans bg-blue-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-blue-700"
               href="/"
             >
               Open Dapp
