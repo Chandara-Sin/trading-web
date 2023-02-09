@@ -1,5 +1,15 @@
 <script lang="ts">
-export default {};
+export default {
+  data: () => ({
+    items: [
+      { title: "Trade" },
+      { title: "Liquidity" },
+      { title: "Launchpad" },
+      { title: "Earn" },
+      { title: "Info" },
+    ],
+  }),
+};
 </script>
 <template>
   <header aria-label="Site Header" class="bg-white">
@@ -12,13 +22,13 @@ export default {};
           class="w-10 h-auto"
         />
       </a>
-      <div class="w-px h-6 bg-gray-600 hidden md:block"></div>
+      <div class="w-px h-6 bg-gray-600 hidden md:block mx-3"></div>
       <div class="flex flex-1 items-center justify-end nav-container">
         <nav aria-label="Site Nav" class="hidden md:block">
-          <ul class="flex items-center gap-6 text-sm">
+          <ul class="flex items-center gap-14 text-sm">
             <li>
               <a
-                class="text-gray-500 transition font-dmsans hover:text-gray-500/75"
+                class="text-gray-500 font-medium transition font-dmsans hover:text-blue-600"
                 href="/"
               >
                 Trade
@@ -26,7 +36,7 @@ export default {};
             </li>
             <li>
               <a
-                class="text-gray-500 transition font-dmsans hover:text-gray-500/75"
+                class="text-gray-500 font-medium transition font-dmsans hover:text-blue-600"
                 href="/"
               >
                 Liquidity
@@ -34,7 +44,7 @@ export default {};
             </li>
             <li>
               <a
-                class="text-gray-500 transition font-dmsans hover:text-gray-500/75"
+                class="text-gray-500 font-medium transition font-dmsans hover:text-blue-600"
                 href="/"
               >
                 Launchpad
@@ -42,7 +52,7 @@ export default {};
             </li>
             <li>
               <a
-                class="text-gray-500 transition font-dmsans hover:text-gray-500/75"
+                class="text-gray-500 font-medium transition font-dmsans hover:text-blue-600"
                 href="/"
               >
                 Earn
@@ -50,7 +60,7 @@ export default {};
             </li>
             <li>
               <a
-                class="text-gray-500 transition font-dmsans hover:text-gray-500/75"
+                class="text-gray-500 font-medium transition font-dmsans hover:text-blue-600"
                 href="/"
               >
                 Info
@@ -75,25 +85,41 @@ export default {};
             </a> -->
           </div>
 
-          <button
-            class="block rounded bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 md:hidden"
-          >
-            <span class="sr-only">Toggle menu</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              stroke-width="2"
+          <v-menu bottom>
+            <template v-slot:activator="{ props }">
+              <button
+                class="block rounded bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 md:hidden"
+                v-bind="props"
+              >
+                <span class="sr-only">Toggle menu</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+            </template>
+            <v-list
+              class="w-56 rounded-md border border-gray-100 bg-white my-1"
+              elevation="1"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </button>
+              <v-list-item v-for="(item, index) in items" :key="index">
+                <v-list-item-title
+                  class="block rounded-lg px-4 py-2 font-dmsans text-sm cursor-pointer text-gray-500 hover:bg-gray-50 hover:text-gray-700"
+                  >{{ item.title }}</v-list-item-title
+                >
+              </v-list-item>
+            </v-list>
+          </v-menu>
         </div>
       </div>
     </div>
