@@ -72,22 +72,22 @@ export default {
         <div class="flex items-center gap-4">
           <div class="sm:flex sm:gap-4">
             <a
-              class="inline-flex items-center gap-2 px-5 py-2.5 transition text-gray-500 hover:text-blue-600"
+              class="inline-flex items-center gap-2 px-5 py-2.5 transition text-gray-500 hover:text-blue-600 hover:translate-x-3"
               href="#"
             >
               <span class="text-sm font-bold font-dmsans"> Sign In </span>
               <svg
-                class="h-5 w-5"
                 xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
                 viewBox="0 0 24 24"
                 fill="none"
+                stroke="currentColor"
               >
                 <path
-                  d="M9 18l6-6-6-6"
-                  stroke="currentColor"
                   stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
+                  d="M9 18l6-6-6-6"
                 />
               </svg>
             </a>
