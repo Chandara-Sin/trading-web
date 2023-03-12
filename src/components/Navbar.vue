@@ -14,7 +14,7 @@ export default {
 <template>
   <header aria-label="Site Header" class="bg-white">
     <div class="flex h-16 items-center gap-8 px-4 sm:px-6 lg:px-8">
-      <a class="block text-teal-600" href="/">
+      <a class="block text-teal-600" href="#">
         <img
           src="../assets/logo.png"
           alt="logo"
@@ -29,7 +29,7 @@ export default {
             <li>
               <a
                 class="text-gray-500 font-medium transition font-dmsans hover:text-blue-600"
-                href="/"
+                href="#"
               >
                 Trade
               </a>
@@ -37,7 +37,7 @@ export default {
             <li>
               <a
                 class="text-gray-500 font-medium transition font-dmsans hover:text-blue-600"
-                href="/"
+                href="#"
               >
                 Liquidity
               </a>
@@ -45,7 +45,7 @@ export default {
             <li>
               <a
                 class="text-gray-500 font-medium transition font-dmsans hover:text-blue-600"
-                href="/"
+                href="#"
               >
                 Launchpad
               </a>
@@ -53,7 +53,7 @@ export default {
             <li>
               <a
                 class="text-gray-500 font-medium transition font-dmsans hover:text-blue-600"
-                href="/"
+                href="#"
               >
                 Earn
               </a>
@@ -61,7 +61,7 @@ export default {
             <li>
               <a
                 class="text-gray-500 font-medium transition font-dmsans hover:text-blue-600"
-                href="/"
+                href="#"
               >
                 Info
               </a>
@@ -93,7 +93,7 @@ export default {
             </a>
             <a
               class="block rounded-3xl font-dmsans bg-blue-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-blue-700"
-              href="/"
+              href="#"
             >
               Open Dapp
             </a>
