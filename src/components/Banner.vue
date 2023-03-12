@@ -13,7 +13,7 @@ export default {};
             Become part of the ecosystem and enjoy the revolution
           </p>
           <a
-            class="rounded bg-blue-600 px-8 py-3 my-4 text-sm font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-indigo-500"
+            class="rounded-xl bg-blue-600 px-8 py-3 my-4 text-sm font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-indigo-500"
             href=""
           >
             Trade now

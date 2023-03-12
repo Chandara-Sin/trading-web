@@ -72,17 +72,31 @@ export default {
         <div class="flex items-center gap-4">
           <div class="sm:flex sm:gap-4">
             <a
+              class="inline-flex items-center gap-2 px-5 py-2.5 transition text-gray-500 hover:text-blue-600"
+              href="#"
+            >
+              <span class="text-sm font-bold font-dmsans"> Sign In </span>
+              <svg
+                class="h-5 w-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M9 18l6-6-6-6"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <a
               class="block rounded-3xl font-dmsans bg-blue-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-blue-700"
               href="/"
             >
               Open Dapp
             </a>
-            <!-- <a
-              class="hidden rounded-3xl bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 transition hover:text-teal-600/75 sm:block"
-              href="/"
-            >
-              Profile
-            </a> -->
           </div>
 
           <v-menu bottom>
