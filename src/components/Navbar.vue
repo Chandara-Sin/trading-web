@@ -2,11 +2,11 @@
 export default {
   data: () => ({
     items: [
-      { title: "Trade" },
-      { title: "Liquidity" },
-      { title: "Launchpad" },
-      { title: "Earn" },
-      { title: "Info" },
+      { title: "Trade", to: "#" },
+      { title: "Liquidity", to: "#" },
+      { title: "Launchpad", to: "#" },
+      { title: "Earn", to: "#" },
+      { title: "Info", to: "#" },
     ],
   }),
 };
@@ -26,44 +26,12 @@ export default {
       <div class="flex flex-1 items-center justify-end nav-container">
         <nav aria-label="Site Nav" class="hidden md:block">
           <ul class="flex items-center gap-14 text-sm">
-            <li>
+            <li v-for="({ title, to }, i) in items" :key="i">
               <a
                 class="text-gray-500 font-medium transition font-dmsans hover:text-blue-600"
-                href="#"
+                :href="to"
               >
-                Trade
-              </a>
-            </li>
-            <li>
-              <a
-                class="text-gray-500 font-medium transition font-dmsans hover:text-blue-600"
-                href="#"
-              >
-                Liquidity
-              </a>
-            </li>
-            <li>
-              <a
-                class="text-gray-500 font-medium transition font-dmsans hover:text-blue-600"
-                href="#"
-              >
-                Launchpad
-              </a>
-            </li>
-            <li>
-              <a
-                class="text-gray-500 font-medium transition font-dmsans hover:text-blue-600"
-                href="#"
-              >
-                Earn
-              </a>
-            </li>
-            <li>
-              <a
-                class="text-gray-500 font-medium transition font-dmsans hover:text-blue-600"
-                href="#"
-              >
-                Info
+                {{ title }}
               </a>
             </li>
           </ul>
