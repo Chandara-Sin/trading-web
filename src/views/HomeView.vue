@@ -8,6 +8,8 @@ import StockCard from "../components/StockCard.vue";
   <main>
     <Navbar />
     <Banner />
-    <StockCard />
+    <div class="flex items-center justify-evenly w-full">
+      <StockCard />
+    </div>
   </main>
 </template>

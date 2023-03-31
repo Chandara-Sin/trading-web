@@ -1,34 +1,110 @@
-<script setup lang="ts"></script>
+<script lang="ts">
+export default {
+  data: () => ({
+    chartOptions: {
+      chart: {
+        toolbar: { show: false },
+        animation: {
+          speed: 750,
+          dynamicAnimation: {
+            enabled: true,
+            speed: 350,
+          },
+        },
+      },
+      dataLabels: {
+        enabled: false,
+      },
+      legend: {
+        enabled: false,
+      },
+      fill: {
+        type: "gradient",
+        gradient: {
+          shade: "light",
+          type: "vertical",
+          opacityFrom: 0.4,
+          opacityTo: 0,
+          shadeIntensity: 0.2,
+        },
+      },
+      colors: ["#13ae94", "#e1e4f2"],
+      grid: {
+        borderColor: "rgba(255,255.255,0.08)",
+        padding: {
+          left: -10,
+          right: 0,
+          top: -16,
+          bottom: -8,
+        },
+        xaxis: { lines: { show: false } },
+        yaxis: { lines: { show: false } },
+      },
+      xaxis: {
+        labels: { show: false },
+        axisBorder: { show: false },
+        axisTicks: { show: false },
+        crosshairs: { show: false },
+      },
+      yaxis: {
+        labels: {
+          show: false,
+        },
+      },
+      tooltip: {
+        enabled: false,
+      },
+    },
+    series: [
+      {
+        data: [30, 20, 35, 50, 49, 60, 55, 52, 60, 73],
+      },
+    ],
+  }),
+};
+</script>
 <template>
   <div
-    class="relative flex items-start justify-between rounded-xl border border-gray-100 p-4 shadow-xl sm:p-6 lg:p-8"
+    class="min-w-96 w-80 h-40 rounded-md bg-stone-100/60 p-4 cursor-pointer shadow-sm"
   >
-    <div class="pt-4 text-gray-500">
-      <svg
-        class="h-8 w-8 sm:h-10 sm:w-10"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
+    <section class="flex justify-between">
+      <div class="flex items-center gap-x-4">
+        <div
+          class="bg-gray-200 rounded-full p-2 flex justify-center items-center"
+        >
+          <img src="../assets/images/apple-logo.png" width="28px" />
+        </div>
+        <div class="">
+          <h3 class="text-sm font-dmsans font-extrabold text-gray-900">AAPL</h3>
+          <p class="font-dmsans text-xs">Apple</p>
+        </div>
+      </div>
+      <span
+        class="cursor-pointer px-2 w-8 h-8 rounded-full flex justify-center items-center hover:bg-gray-200"
       >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
-        ></path>
-      </svg>
-
-      <h3 class="mt-4 text-lg font-bold text-gray-900 sm:text-xl">AAPL</h3>
-
-      <p class="mt-2 hidden text-sm sm:block">Apple</p>
-    </div>
-
-    <span
-      class="rounded-full bg-green-100 px-3 py-1.5 text-xs font-medium text-green-600"
-    >
-      5
-    </span>
+        <icon :icon="['fas', 'ellipsis-vertical']" />
+      </span>
+    </section>
+    <section class="flex items-center justify-between">
+      <div class="h-24 w-44">
+        <apexchart
+          type="area"
+          height="100%"
+          width="100%"
+          :options="chartOptions"
+          :series="series"
+        ></apexchart>
+      </div>
+      <div>
+        <p class="font-bold font-dmsans">$ 10.390,00</p>
+        <p class="font-bold font-dmsans text-green-500 text-sm text-right">
+          <span>
+            <icon :icon="['fas', 'arrow-trend-up']" />
+          </span>
+          +20
+        </p>
+      </div>
+    </section>
   </div>
 </template>
 <style scoped></style>

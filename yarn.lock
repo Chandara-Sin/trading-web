@@ -548,6 +548,41 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fortawesome/fontawesome-common-types@npm:6.4.0":
+  version: 6.4.0
+  resolution: "@fortawesome/fontawesome-common-types@npm:6.4.0"
+  checksum: a9b79136caa615352bd921cfe2710516321b402cd76c3f0ae68e579a7e3d7645c5a5c0ecd7516c0b207adeeffd1d2174978638d8c0d3c8c937d66fca4f2ff556
+  languageName: node
+  linkType: hard
+
+"@fortawesome/fontawesome-svg-core@npm:^6.4.0":
+  version: 6.4.0
+  resolution: "@fortawesome/fontawesome-svg-core@npm:6.4.0"
+  dependencies:
+    "@fortawesome/fontawesome-common-types": 6.4.0
+  checksum: 5d4e6c15f814f5ce29053b666d0c7d194dc8ba173d128a38cc5856403a09d4e817e54956d30ed8d48d621f2f5ebcc71756f4e8fe5c5a091c636fc728fcb2362b
+  languageName: node
+  linkType: hard
+
+"@fortawesome/free-solid-svg-icons@npm:^6.4.0":
+  version: 6.4.0
+  resolution: "@fortawesome/free-solid-svg-icons@npm:6.4.0"
+  dependencies:
+    "@fortawesome/fontawesome-common-types": 6.4.0
+  checksum: efdd1688620be3d52aacaeac36c955571962e174ae981fc697b6e92fb0996b00166d02e7729a59ea93713a514e2c8d564ab1aa79c9653b4cfed0263e4874d070
+  languageName: node
+  linkType: hard
+
+"@fortawesome/vue-fontawesome@npm:^3.0.3":
+  version: 3.0.3
+  resolution: "@fortawesome/vue-fontawesome@npm:3.0.3"
+  peerDependencies:
+    "@fortawesome/fontawesome-svg-core": ~1 || ~6
+    vue: ">= 3.0.0 < 4"
+  checksum: a3ec4db7c849c8378eb25c35a8e7905a37df9d3263d5284d0ce8bd9cff1d79bc7015ec68e7a2d29aedb521408f2d47bfb90a8756262394e8e2cb6e9bc73a3b41
+  languageName: node
+  linkType: hard
+
 "@gar/promisify@npm:^1.1.3":
   version: 1.1.3
   resolution: "@gar/promisify@npm:1.1.3"
@@ -1158,6 +1193,20 @@ __metadata:
     normalize-path: ^3.0.0
     picomatch: ^2.0.4
   checksum: 3e044fd6d1d26545f235a9fe4d7a534e2029d8e59fa7fd9f2a6eb21230f6b5380ea1eaf55136e60cbf8e613544b3b766e7a6fa2102e2a3a117505466e3025dc2
+  languageName: node
+  linkType: hard
+
+"apexcharts@npm:^3.37.2":
+  version: 3.37.2
+  resolution: "apexcharts@npm:3.37.2"
+  dependencies:
+    svg.draggable.js: ^2.2.2
+    svg.easing.js: ^2.0.0
+    svg.filter.js: ^2.0.2
+    svg.pathmorphing.js: ^0.1.3
+    svg.resize.js: ^1.4.3
+    svg.select.js: ^3.0.1
+  checksum: 281f876c459cf22f882848c058d0395f0205ac1b812ff2c19f236dd751ad53ce43e0f7a372f5a050e7e5d41031ed0fada25888bc3540de8d99fe5c06d5ca69a7
   languageName: node
   linkType: hard
 
@@ -4239,6 +4288,77 @@ __metadata:
   languageName: node
   linkType: hard
 
+"svg.draggable.js@npm:^2.2.2":
+  version: 2.2.2
+  resolution: "svg.draggable.js@npm:2.2.2"
+  dependencies:
+    svg.js: ^2.0.1
+  checksum: b9068975d743be664695e7d4323624bba8ff2795b855a46a2f15c842827022684501d63239c99723238d39c9f991940dc04639b8f43ac124fd9ca44a34e6aab2
+  languageName: node
+  linkType: hard
+
+"svg.easing.js@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "svg.easing.js@npm:2.0.0"
+  dependencies:
+    svg.js: ">=2.3.x"
+  checksum: 0f7df78333d879dc00200ddbb4e9d7d745307c002b5dd242ddaf276e8d907067ab75383869ef1940975be1765d595d379ced491ff4bdf78d867bff8225544e92
+  languageName: node
+  linkType: hard
+
+"svg.filter.js@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "svg.filter.js@npm:2.0.2"
+  dependencies:
+    svg.js: ^2.2.5
+  checksum: f0e780bfe385336a7c9d1d8a3ebba1ca9712f6bf0917769fd30c9fd4e3559186ec18d4d6520d9841a9cceba2ac8ff1eacc76b98f7e8b15d5f4a58975a8ecdc64
+  languageName: node
+  linkType: hard
+
+"svg.js@npm:>=2.3.x, svg.js@npm:^2.0.1, svg.js@npm:^2.2.5, svg.js@npm:^2.4.0, svg.js@npm:^2.6.5":
+  version: 2.7.1
+  resolution: "svg.js@npm:2.7.1"
+  checksum: 945bfc9623985fefb4c7275a1b98b5168e5857291f46cbd299bd2e14ce7f4428fea6569c7446d37b75694c43dea01a5f179fbce4f770e7dcd136117bb8f1a3f3
+  languageName: node
+  linkType: hard
+
+"svg.pathmorphing.js@npm:^0.1.3":
+  version: 0.1.3
+  resolution: "svg.pathmorphing.js@npm:0.1.3"
+  dependencies:
+    svg.js: ^2.4.0
+  checksum: bcbe1ccea95c980fa127cb6ad955f1970d763143ab11576cca2fd8d13616deedf933bc17a6310754cd0cb404ac501d627afb5805c578878e4c8f24e1818a7de6
+  languageName: node
+  linkType: hard
+
+"svg.resize.js@npm:^1.4.3":
+  version: 1.4.3
+  resolution: "svg.resize.js@npm:1.4.3"
+  dependencies:
+    svg.js: ^2.6.5
+    svg.select.js: ^2.1.2
+  checksum: 8f4116f4422b72c66bb1110dca2d77ab2cc0665db1e0cd1c0020e06fe9684f53d9bc7aca3b90ce82ce35103ff8ea83a93df1db5d88c889e511d7622c9b000884
+  languageName: node
+  linkType: hard
+
+"svg.select.js@npm:^2.1.2":
+  version: 2.1.2
+  resolution: "svg.select.js@npm:2.1.2"
+  dependencies:
+    svg.js: ^2.2.5
+  checksum: 1dbbb44d16170aad1372e0f8f0d109a21e4216e1e4e28a566738c6cb6b4519b37e44cd1f7de06f3c8eec5e588845d8cbb0e37efc89b8d27401e4c6a0a13564a4
+  languageName: node
+  linkType: hard
+
+"svg.select.js@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "svg.select.js@npm:3.0.1"
+  dependencies:
+    svg.js: ^2.6.5
+  checksum: 0ce3bda86f4b527ce1add02d0ac61ac26678db24c0e4126c584b752e65a1c3458bbe958e29eb4604b3157ef1fdace37b727eccbc2ccdb4fce0015e0ad196fc1c
+  languageName: node
+  linkType: hard
+
 "symbol-tree@npm:^3.2.4":
   version: 3.2.4
   resolution: "symbol-tree@npm:3.2.4"
@@ -4391,12 +4511,16 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "trading-web@workspace:."
   dependencies:
+    "@fortawesome/fontawesome-svg-core": ^6.4.0
+    "@fortawesome/free-solid-svg-icons": ^6.4.0
+    "@fortawesome/vue-fontawesome": ^3.0.3
     "@types/jsdom": ^20.0.1
     "@types/node": ^18.11.12
     "@vitejs/plugin-vue": ^4.0.0
     "@vitejs/plugin-vue-jsx": ^3.0.0
     "@vue/test-utils": ^2.2.6
     "@vue/tsconfig": ^0.1.3
+    apexcharts: ^3.37.2
     autoprefixer: ^10.4.13
     cypress: ^12.0.2
     jsdom: ^20.0.3
@@ -4410,6 +4534,7 @@ __metadata:
     vue: ^3.2.45
     vue-router: ^4.1.6
     vue-tsc: ^1.0.12
+    vue3-apexcharts: ^1.4.1
     vuetify: 3.1.3
   languageName: unknown
   linkType: soft
@@ -4697,6 +4822,16 @@ __metadata:
   bin:
     vue-tsc: bin/vue-tsc.js
   checksum: 788535bd38383b94600a25c98a18b510c562fa06755549e1ce8ab733dca17e6891bb17e398943b5ae36bd5865918488bb84e6102a0240fa786b4ec6ba05f319b
+  languageName: node
+  linkType: hard
+
+"vue3-apexcharts@npm:^1.4.1":
+  version: 1.4.1
+  resolution: "vue3-apexcharts@npm:1.4.1"
+  peerDependencies:
+    apexcharts: "> 3.0.0"
+    vue: "> 3.0.0"
+  checksum: 01f2da799d3ae615284ce775127b6278ebcc3060203dd3d0eb14dd6e35b5c7f4cbf6d1828343c5fc54e76442bd440abb08fbc11dca8041f52ff944d0f0649844
   languageName: node
   linkType: hard
 
