@@ -9,15 +9,19 @@ export default {};
           <p class="text-5xl text-center font-bold font-dmsans">
             Make the Trade
           </p>
-          <p class="m-2 p-2 font-4xl text-center font-light font-dmsans">
+          <p class="py-4 w-full font-4xl text-center font-light font-dmsans">
             Become part of the ecosystem and enjoy the revolution
           </p>
-          <a
-            class="rounded-xl bg-blue-600 px-8 py-3 my-4 text-sm font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-indigo-500"
-            href="#"
+          <button
+            class="flex items-center justify-center rounded-xl gap-x-2 bg-blue-600 px-4 py-3 my-4 transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-indigo-500"
           >
-            Trade now
-          </a>
+            <p class="text-sm font-medium font-dmsans text-white">Trade now</p>
+
+            <icon
+              :icon="['fas', 'arrow-up-long']"
+              class="w-3 h-3 rotate-45 text-white"
+            />
+          </button>
         </div>
       </v-col>
       <v-col cols="12" sm="6">
