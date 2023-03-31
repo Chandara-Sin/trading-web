@@ -40,7 +40,7 @@ export default {
         <div class="flex items-center gap-4">
           <div class="sm:flex sm:gap-4">
             <a
-              class="inline-flex items-center gap-2 px-5 py-2.5 transition text-gray-500 hover:text-blue-600 hover:translate-x-3"
+              class="hidden items-center gap-2 px-5 py-2.5 transition text-gray-500 hover:text-blue-600 hover:translate-x-3 lg:inline-flex"
               href="#"
             >
               <span class="text-sm font-bold font-dmsans"> Sign In </span>
