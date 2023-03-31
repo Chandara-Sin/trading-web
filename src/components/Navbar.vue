@@ -1,16 +1,3 @@
-<script lang="ts">
-export default {
-  data: () => ({
-    items: [
-      { title: "Trade", to: "#" },
-      { title: "Liquidity", to: "#" },
-      { title: "Launchpad", to: "#" },
-      { title: "Earn", to: "#" },
-      { title: "Info", to: "#" },
-    ],
-  }),
-};
-</script>
 <template>
   <header aria-label="Site Header" class="bg-white">
     <div class="flex h-16 items-center gap-8 px-4 sm:px-6 lg:px-8">
@@ -107,6 +94,20 @@ export default {
     </div>
   </header>
 </template>
+
+<script lang="ts">
+export default {
+  data: () => ({
+    items: [
+      { title: "Trade", to: "#" },
+      { title: "Liquidity", to: "#" },
+      { title: "Launchpad", to: "#" },
+      { title: "Earn", to: "#" },
+      { title: "Info", to: "#" },
+    ],
+  }),
+};
+</script>
 
 <style scoped>
 @media (min-width: 768px) {

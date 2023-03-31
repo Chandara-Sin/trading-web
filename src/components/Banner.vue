@@ -1,6 +1,3 @@
-<script lang="ts">
-export default {};
-</script>
 <template>
   <v-container class="bg-surface-variant">
     <v-row>
@@ -32,4 +29,7 @@ export default {};
     </v-row>
   </v-container>
 </template>
+<script lang="ts">
+export default {};
+</script>
 <style scoped></style>
