@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { chartSeries } = defineProps<{
-  chartSeries: { data: number[] }[];
+  chartSeries: number[];
 }>();
 </script>
 
@@ -10,11 +10,11 @@ const { chartSeries } = defineProps<{
   >
     <section class="flex justify-between">
       <div class="flex items-center gap-x-4">
-        <div
+        <figure
           class="bg-gray-200 rounded-full p-2 flex justify-center items-center"
         >
           <img src="../assets/images/apple-logo.png" width="28px" />
-        </div>
+        </figure>
         <div class="">
           <h3 class="text-sm font-dmsans font-extrabold text-gray-900">AAPL</h3>
           <p class="font-dmsans text-xs">Apple</p>
@@ -33,7 +33,7 @@ const { chartSeries } = defineProps<{
           height="100%"
           width="100%"
           :options="chartOptions"
-          :series="chartSeries"
+          :series="[{ data: chartSeries }]"
         ></apexchart>
       </div>
       <div>

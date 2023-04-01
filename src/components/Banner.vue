@@ -23,7 +23,7 @@
       </v-col>
       <v-col cols="12" sm="6">
         <video autoplay muted loop>
-          <source src="../assets/trading-banner.mp4" type="video/mp4" />
+          <source src="@/assets/trading-banner.mp4" type="video/mp4" />
         </video>
       </v-col>
     </v-row>
