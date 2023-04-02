@@ -2,7 +2,7 @@
   <v-container class="bg-surface-variant">
     <v-row>
       <v-col cols="12" sm="6">
-        <div class="flex flex-wrap place-content-center h-full w-full">
+        <article class="flex flex-wrap place-content-center h-full w-full">
           <p class="text-5xl text-center font-bold font-dmsans">
             Make the Trade
           </p>
@@ -19,11 +19,11 @@
               class="w-3 h-3 rotate-45 text-white"
             />
           </button>
-        </div>
+        </article>
       </v-col>
       <v-col cols="12" sm="6">
         <video autoplay muted loop>
-          <source src="@/assets/trading-banner.mp4" type="video/mp4" />
+          <source src="../assets/trading-banner.mp4" type="video/mp4" />
         </video>
       </v-col>
     </v-row>

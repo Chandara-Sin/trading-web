@@ -9,7 +9,22 @@ import StockCard from "../components/StockCard.vue";
     <Navbar />
     <Banner />
     <div class="flex items-center justify-between w-full">
-      <StockCard v-for="chartData of chartDataList" :chartSeries="chartData" />
+      <StockCard
+        v-for="{
+          title,
+          symbol,
+          series,
+          volumn,
+          netChange,
+          deltaIndicator,
+        } of chartDataList"
+        :series="series"
+        :symbol="symbol"
+        :title="title"
+        :volumn="volumn"
+        :netChange="netChange"
+        :deltaIndicator="deltaIndicator"
+      />
     </div>
   </main>
 </template>
@@ -18,9 +33,38 @@ import StockCard from "../components/StockCard.vue";
 export default {
   data: () => ({
     chartDataList: [
-      [30, 20, 35, 50, 49, 60, 55, 52, 60, 73],
-      [70, 80, 95, 78, 59, 60, 55, 52, 48, 30],
-      [20, 10, 34, 20, 39, 80, 35, 42, 60, 53],
+      {
+        title: "Apple",
+        symbol: "AAPL",
+        series: [30, 20, 35, 50, 49, 60, 55, 52, 60, 73],
+        volumn: +1039000,
+        netChange: +20,
+        deltaIndicator: "up",
+      },
+      {
+        title: "Tesla",
+        symbol: "TSLA",
+        series: [70, 80, 95, 78, 59, 60, 55, 52, 48, 30],
+        volumn: +739000,
+        netChange: +12,
+        deltaIndicator: "up",
+      },
+      {
+        title: "Adidas",
+        symbol: "ADS",
+        series: [20, 10, 34, 20, 39, 80, 35, 42, 60, 53],
+        volumn: +1200,
+        netChange: +20,
+        deltaIndicator: "up",
+      },
+      {
+        title: "Airbnb",
+        symbol: "ABNB",
+        series: [10, 10, 24, 50, 39, 30, 35, 42, 53, 33],
+        volumn: +1740,
+        netChange: +30,
+        deltaIndicator: "up",
+      },
     ],
   }),
 };

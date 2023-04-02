@@ -1,23 +1,35 @@
 <script setup lang="ts">
-const { chartSeries } = defineProps<{
-  chartSeries: number[];
+const { title, series, symbol, volumn, netChange } = defineProps<{
+  title: string;
+  series: number[];
+  symbol: string;
+  volumn: number;
+  netChange: number;
+  deltaIndicator: string;
 }>();
 </script>
 
 <template>
   <div
-    class="min-w-96 w-80 h-40 rounded-md bg-stone-100/60 p-4 cursor-pointer shadow-sm"
+    class="w-[300px] h-40 rounded-md bg-stone-100/60 p-4 cursor-pointer shadow-sm"
   >
     <section class="flex justify-between">
       <div class="flex items-center gap-x-4">
-        <figure
+        <div
           class="bg-gray-200 rounded-full p-2 flex justify-center items-center"
         >
-          <img src="../assets/images/apple-logo.png" width="28px" />
-        </figure>
-        <div class="">
-          <h3 class="text-sm font-dmsans font-extrabold text-gray-900">AAPL</h3>
-          <p class="font-dmsans text-xs">Apple</p>
+          <v-img
+            src="../assets/images/apple-logo.png"
+            width="28px"
+            height="28px"
+            alt=""
+          ></v-img>
+        </div>
+        <div>
+          <h3 class="text-sm font-dmsans font-extrabold text-gray-900">
+            {{ symbol }}
+          </h3>
+          <p class="font-dmsans text-xs">{{ title }}</p>
         </div>
       </div>
       <span
@@ -33,16 +45,16 @@ const { chartSeries } = defineProps<{
           height="100%"
           width="100%"
           :options="chartOptions"
-          :series="[{ data: chartSeries }]"
+          :series="[{ data: series }]"
         ></apexchart>
       </div>
       <div>
-        <p class="font-bold font-dmsans">$ 10.390,00</p>
+        <p class="font-bold font-dmsans">$ {{ volumn }}</p>
         <p class="font-bold font-dmsans text-green-500 text-sm text-right">
           <span>
             <icon :icon="['fas', 'arrow-trend-up']" />
           </span>
-          +20
+          {{ netChange }}
         </p>
       </div>
     </section>
