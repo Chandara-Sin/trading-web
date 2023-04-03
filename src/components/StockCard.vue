@@ -15,15 +15,8 @@ const { title, series, symbol, volumn, netChange } = defineProps<{
   >
     <section class="flex justify-between">
       <div class="flex items-center gap-x-4">
-        <div
-          class="bg-gray-200 rounded-full p-2 flex justify-center items-center"
-        >
-          <v-img
-            src="../assets/images/apple-logo.png"
-            width="28px"
-            height="28px"
-            alt=""
-          ></v-img>
+        <div class="bg-gray-200 rounded-full p-2">
+          <img src="../assets/images/apple-logo.png" class="w-7" />
         </div>
         <div>
           <h3 class="text-sm font-dmsans font-extrabold text-gray-900">
