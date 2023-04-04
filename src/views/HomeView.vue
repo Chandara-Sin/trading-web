@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import Navbar from "../components/Navbar.vue";
 import Banner from "../components/Banner.vue";
-import StockCard from "../components/StockCard.vue";
+import StockCard from "../components/StockCard/StockCard.vue";
+import type { StockCardType } from "../components/StockCard/StockCardType";
 </script>
 
 <template>
@@ -31,7 +32,7 @@ import StockCard from "../components/StockCard.vue";
 
 <script lang="ts">
 export default {
-  data: () => ({
+  data: (): { chartDataList: StockCardType[] } => ({
     chartDataList: [
       {
         title: "Apple",
@@ -47,14 +48,14 @@ export default {
         series: [70, 80, 95, 78, 59, 60, 55, 52, 48, 30],
         volumn: +739000,
         netChange: +12,
-        deltaIndicator: "up",
+        deltaIndicator: "down",
       },
       {
         title: "Adidas",
         symbol: "ADS",
-        series: [20, 10, 34, 20, 39, 80, 35, 42, 60, 53],
+        series: [20, 10, 34, 20, 39, 80, 35, 42, 50, 63],
         volumn: +1200,
-        netChange: +20,
+        netChange: +8,
         deltaIndicator: "up",
       },
       {
@@ -62,8 +63,8 @@ export default {
         symbol: "ABNB",
         series: [10, 10, 24, 50, 39, 30, 35, 42, 53, 33],
         volumn: +1740,
-        netChange: +30,
-        deltaIndicator: "up",
+        netChange: +18,
+        deltaIndicator: "down",
       },
     ],
   }),

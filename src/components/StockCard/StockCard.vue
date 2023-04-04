@@ -11,12 +11,12 @@ const { title, series, symbol, volumn, netChange } = defineProps<{
 
 <template>
   <div
-    class="w-[300px] h-40 rounded-md bg-stone-100/60 p-4 cursor-pointer shadow-sm"
+    class="w-[300px] h-40 rounded-md bg-stone-100/60 p-4 cursor-pointer shadow-sm hover:shadow-md hover:scale-105 transition"
   >
     <section class="flex justify-between">
       <div class="flex items-center gap-x-4">
         <div class="bg-gray-200 rounded-full p-2">
-          <img src="../assets/images/apple-logo.png" class="w-7" />
+          <img src="@/assets/images/apple-logo.png" class="w-7" />
         </div>
         <div>
           <h3 class="text-sm font-dmsans font-extrabold text-gray-900">
@@ -43,9 +43,18 @@ const { title, series, symbol, volumn, netChange } = defineProps<{
       </div>
       <div>
         <p class="font-bold font-dmsans">$ {{ volumn }}</p>
-        <p class="font-bold font-dmsans text-green-500 text-sm text-right">
+        <p
+          :class="[
+            deltaIndicator === 'up' ? 'text-green-500' : 'text-red-500',
+            'font-bold font-dmsans text-sm text-right',
+          ]"
+        >
           <span>
-            <icon :icon="['fas', 'arrow-trend-up']" />
+            <icon
+              v-if="deltaIndicator === 'up'"
+              :icon="['fas', 'arrow-trend-up']"
+            />
+            <icon v-else :icon="['fas', 'arrow-trend-down']" />
           </span>
           {{ netChange }}
         </p>
