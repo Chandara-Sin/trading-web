@@ -1,5 +1,5 @@
 <template>
-  <v-container class="bg-surface-variant">
+  <v-container>
     <v-row>
       <v-col cols="12" sm="6">
         <article class="flex flex-wrap place-content-center h-full w-full">
