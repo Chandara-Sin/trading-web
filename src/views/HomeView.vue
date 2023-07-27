@@ -6,10 +6,10 @@ import type { StockCardType } from "../components/StockCard/StockCardType";
 </script>
 
 <template>
-  <main>
+  <main class="w-fit">
     <Navbar />
     <Banner />
-    <div class="flex items-center justify-between w-full">
+    <div class="flex flex-wrap gap-4 justify-center items-center">
       <StockCard
         v-for="{
           title,
