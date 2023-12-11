@@ -11,15 +11,15 @@
     "test:e2e:dev": "start-server-and-test 'vite dev --port 4173' :4173 'cypress open --e2e'"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.4.2",
-    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/vue-fontawesome": "^3.0.5",
-    "apexcharts": "^3.44.0",
+    "apexcharts": "^3.44.2",
     "pinia": "^2.1.7",
-    "vue": "^3.3.8",
+    "vue": "^3.3.11",
     "vue-router": "^4.2.5",
     "vue3-apexcharts": "^1.4.4",
-    "vuetify": "^3.4.3"
+    "vuetify": "^3.4.6"
   },
   "devDependencies": {
     "@types/jsdom": "^21.1.6",
